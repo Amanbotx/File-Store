@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "Cluster0")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6883904115:AAFzjOFjf30iab7YEh5dMQ5Y1D0V-6bBQ74")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7179994361:AAE6F2XnYoWWbC2e4-WAT3Ipjhce73Pu9-E")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Owner_o_Bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/eeb7e5b49e08038d0e719.jpg')).split() # Bot Start Picture
 
@@ -54,8 +54,8 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002062708890"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001950852110')).split()]
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001973960964"))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002143188496')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -76,10 +76,10 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 # File Stream Config
 class Var(object):
     MULTI_CLIENT = False
-    name = str(getenv('name', 'filetolinkvjbot'))
+    name = str(getenv('name', 'YD Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002062708890'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001973960964'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
