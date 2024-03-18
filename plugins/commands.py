@@ -219,7 +219,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@VJ_Botz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@YD_OWNER_BOT  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -297,7 +297,7 @@ async def shortener_api_handler(client, m: Message):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-@Client.on_message(filters.command("aman_base_site") & filters.private)
+@Client.on_message(filters.command("base_site") & filters.private)
 async def base_site_handler(client, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
