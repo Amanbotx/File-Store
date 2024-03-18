@@ -413,7 +413,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )  
 
-elif lazyData.startswith("generate_stream_link"):
+    elif lazyData.startswith("generate_stream_link"):
         _, file_id = lazyData.split(":")
         try:
             user_id = query.from_user.id
@@ -423,8 +423,8 @@ elif lazyData.startswith("generate_stream_link"):
                 file_id=file_id,
             )
             fileName = {quote_plus(get_name(log_msg))}
-            spidy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-            spidy_download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             buttons = []                              
             buttons = [[
                     InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
@@ -448,6 +448,8 @@ elif lazyData.startswith("generate_stream_link"):
             print(e)  # print the error message
             await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
             return
+
+
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
