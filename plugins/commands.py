@@ -74,7 +74,7 @@ async def start(client, message):
         m=await message.reply_text("Sᴛᴀʀᴛɪɴɢ...")
         await asyncio.sleep(1)
         await m.delete()
-        m=await message.reply_sticker("CAACAgQAAxkBAAIFm2WjxImFjRS_pPtTWrVguIRYSovIAAJfAgACqUJKA1WsR5LMc8L1HgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAIhjWX4VIjNbM_Tqz0qMPHAgChDEmQAAwEAA8EkMTFM5ZVqKsDWbx4E") 
         await asyncio.sleep(1)
         await m.delete()
         me2 = (await client.get_me()).mention
