@@ -131,8 +131,8 @@ async def start(client, message):
                     protect_content=msg.get('protect', False),
                 )
                 
-                asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
-                asyncio.create_task(delete_after_delay(h, AUTO_DELETE_TIME))
+                asyncio.create_task(delete_after_delay(k, 1800))
+                asyncio.create_task(delete_after_delay(h, 1800))
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -182,8 +182,8 @@ async def start(client, message):
                     h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
-                    asyncio.create_task(delete_after_delay(k, 300))
-                    asyncio.create_task(delete_after_delay(h, 300))
+                    asyncio.create_task(delete_after_delay(k, 1800))
+                    asyncio.create_task(delete_after_delay(h, 1800))
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
                     await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
@@ -242,7 +242,7 @@ async def start(client, message):
                 )
             )
             k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
-            await asyncio.sleep(300)
+            await asyncio.sleep(1800)
             await msg.delete()
             await g.delete()
             await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
