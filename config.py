@@ -45,8 +45,8 @@ DB_NAME = environ.get("DB_NAME", "Cluster0")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "7179994361:AAE6F2XnYoWWbC2e4-WAT3Ipjhce73Pu9-E")
-BOT_USERNAME = environ.get("BOT_USERNAME", "YDFileStoreBot") # your bot username without @
+BOT_TOKEN = environ.get("BOT_TOKEN", "http://t.me/AVFILESTOREXBot)
+BOT_USERNAME = environ.get("BOT_USERNAME", "AVFILESTOREXBot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/eeb7e5b49e08038d0e719.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
