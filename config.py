@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "Cluster0")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "http://t.me/AVFILESTOREXBot)
+BOT_TOKEN = environ.get("BOT_TOKEN", "6776149173:AAEQe2Y_1d7ObmEECpoVjuReOfrHuzorSJA")
 BOT_USERNAME = environ.get("BOT_USERNAME", "AVFILESTOREXBot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/eeb7e5b49e08038d0e719.jpg')).split() # Bot Start Picture
 
@@ -76,7 +76,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 # File Stream Config
 class Var(object):
     MULTI_CLIENT = False
-    name = str(getenv('name', 'YD Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ'))
+    name = str(getenv('name', 'AV Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001973960964'))
